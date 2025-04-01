@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;  /* Aumentamos el tamaño máximo para que ocupe más espacio */
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2,
+p {
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.refresh-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.object-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr)); /* Mostrar varios elementos por fila */
+  gap: 20px;
+  justify-content: center;  /* Centra los objetos si no se llenan todas las filas */
+}
+
+.object-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.object-photo {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.object-details {
+  padding: 10px 0;
+}
+
+.object-price {
+  font-size: 1.2em;
+  color: #28a745;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+#root{
+  width: 100%;
+}
